@@ -26,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
         // Example of a call to a native method
         TextView tv = binding.sampleText;
         tv.setText(stringFromJNI());
+        TextView tv2 = binding.textView2;
+        tv2.setText(String.format("從NDK取出的值是:%d", intFromJNI()));
     }
 
     /**
